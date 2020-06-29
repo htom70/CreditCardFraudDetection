@@ -1,0 +1,64 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://spring.io/guides/gs-producing-web-service"
+           targetNamespace="http://spring.io/guides/gs-producing-web-service" elementFormDefault="qualified">
+
+    <xs:element name="getDetectionRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="request" type="tns:request"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getDetectionResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="response" type="tns:response"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="request">
+        <xs:sequence>
+            <xs:element name="Time" type="xs:int"/>
+            <xs:element name="V1" type="xs:double"/>
+            <xs:element name="V2" type="xs:double"/>
+            <xs:element name="V3" type="xs:double"/>
+            <xs:element name="V4" type="xs:double"/>
+            <xs:element name="V5" type="xs:double"/>
+            <xs:element name="V6" type="xs:double"/>
+            <xs:element name="V7" type="xs:double"/>
+            <xs:element name="V8" type="xs:double"/>
+            <xs:element name="V9" type="xs:double"/>
+            <xs:element name="V10" type="xs:double"/>
+            <xs:element name="V11" type="xs:double"/>
+            <xs:element name="V12" type="xs:double"/>
+            <xs:element name="V13" type="xs:double"/>
+            <xs:element name="V14" type="xs:double"/>
+            <xs:element name="V15" type="xs:double"/>
+            <xs:element name="V16" type="xs:double"/>
+            <xs:element name="V17" type="xs:double"/>
+            <xs:element name="V18" type="xs:double"/>
+            <xs:element name="V19" type="xs:double"/>
+            <xs:element name="V20" type="xs:double"/>
+            <xs:element name="V21" type="xs:double"/>
+            <xs:element name="V22" type="xs:double"/>
+            <xs:element name="V23" type="xs:double"/>
+            <xs:element name="V24" type="xs:double"/>
+            <xs:element name="V25" type="xs:double"/>
+            <xs:element name="V26" type="xs:double"/>
+            <xs:element name="V27" type="xs:double"/>
+            <xs:element name="V28" type="xs:double"/>
+            <xs:element name="Amount" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="response">
+        <xs:sequence>
+            <xs:element name="prediction" type="xs:double"/>
+            <xs:element name="probability" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+
+</xs:schema>
