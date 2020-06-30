@@ -19,9 +19,9 @@ public class ProducingWebServiceApplication {
 	@Bean
 	public Executor taskExecutor() {
 		ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
-		executor.setCorePoolSize(1);
-		executor.setMaxPoolSize(1);
-//		executor.setQueueCapacity(500);
+		executor.setCorePoolSize(16);
+		executor.setMaxPoolSize(96);
+		executor.setQueueCapacity(32);
 		executor.setThreadNamePrefix("FraudDetection-");
 		executor.initialize();
 		return executor;

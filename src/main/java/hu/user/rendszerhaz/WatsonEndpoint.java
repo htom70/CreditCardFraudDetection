@@ -1,5 +1,6 @@
 package hu.user.rendszerhaz;
 
+import hu.user.rendszerhaz.domain.Values;
 import hu.user.rendszerhaz.service.WatsonClient;
 import io.spring.guides.gs_producing_web_service.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,9 +35,9 @@ public class WatsonEndpoint {
 //            e.printStackTrace();
 //        }
         Request request = detectionRequest.getRequest();
-        CompletableFuture<String> responseFromWatson = watsonClient.predict(detectionRequest.getRequest());
+        CompletableFuture<Values> responseFromWatson = watsonClient.predict(detectionRequest.getRequest());
         try {
-            String result = responseFromWatson.get();
+            Values predictions = responseFromWatson.get();
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
