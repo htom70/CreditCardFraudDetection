@@ -4,7 +4,7 @@
     <xs:element name="getDetectionRequest">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="request" type="tns:request"/>
+                <xs:element name="request" type="tns:request" minOccurs="1" maxOccurs="unbounded"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -12,7 +12,7 @@
     <xs:element name="getDetectionResponse">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="response" type="tns:response"/>
+                <xs:element name="response" type="tns:response" minOccurs="1" maxOccurs="unbounded"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
