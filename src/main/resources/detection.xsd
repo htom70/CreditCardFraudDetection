@@ -54,8 +54,9 @@
 
     <xs:complexType name="response">
         <xs:sequence>
-            <xs:element name="prediction" type="xs:double"/>
-            <xs:element name="probability" type="xs:double"/>
+            <xs:element name="prediction" type="xs:int"/>
+            <xs:element name="negative_probability" type="xs:double"/>
+            <xs:element name="positive_probability" type="xs:double"/>
         </xs:sequence>
     </xs:complexType>
 

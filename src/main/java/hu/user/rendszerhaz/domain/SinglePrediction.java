@@ -9,7 +9,7 @@ import java.util.List;
 public class SinglePrediction {
 
     private int predictionValue;
-    private double[] parameters = new double[2];
+    private List<Double> parameters = new ArrayList<>();
 
     public int getPredictionValue() {
         return predictionValue;
@@ -19,11 +19,11 @@ public class SinglePrediction {
         this.predictionValue = predictionValue;
     }
 
-    public double[] getParameters() {
+    public List<Double> getParameters() {
         return parameters;
     }
 
-    public void setParameters(double[] parameters) {
+    public void setParameters(List<Double> parameters) {
         this.parameters = parameters;
     }
 }
